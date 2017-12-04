@@ -35,7 +35,7 @@ var AppComponent = ng.core.Component({
                     setTimeout(function () {
                         init(self.maze.maze);
                         recursiveMazeDraw(stringToCharAry(self.maze.maze), 0);
-                    }, 1000);
+                    }, 1500);
                 }
                 else {
                     // alert for blank input
