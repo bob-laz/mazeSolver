@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <base href="/">
+    <title>Maze Solver</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="app/app.component.css"/>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/myScript.js"></script>
+    <script type="text/javascript" src="js/mazes.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+<div id="main">
+    <h1>Maze Solver</h1>
+    <div>
+        <app></app>
+    </div>
+</div>
+
+<footer class="footer">
+    Bob Laskowski 2017
+</footer>
+<script type="text/javascript" src="webjars/core-js/client/shim.min.js"></script>
+<script type="text/javascript" src="webjars/rxjs/bundles/Rx.min.js"></script>
+<script type="text/javascript" src="webjars/zone.js/dist/zone.min.js"></script>
+<script type="text/javascript" src="webjars/reflect-metadata/Reflect.js"></script>
+<script type="text/javascript" src="webjars/angular__core/bundles/core.umd.js"></script>
+<script type="text/javascript" src="webjars/angular__common/bundles/common.umd.js"></script>
+<script type="text/javascript" src="webjars/angular__compiler/bundles/compiler.umd.js"></script>
+<script type="text/javascript" src="webjars/angular__platform-browser/bundles/platform-browser.umd.js"></script>
+<script type="text/javascript"
+        src="webjars/angular__platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js"></script>
+<script type="text/javascript" src="webjars/angular__http/bundles/http.umd.js"></script>
+<script type="text/javascript" src="app/app.component.js"></script>
+<script type="text/javascript" src="app/app.module.js"></script>
+
+<script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        ng.platformBrowserDynamic.platformBrowserDynamic().bootstrapModule(AppModule);
+    });
+</script>
+</body>
+</html>

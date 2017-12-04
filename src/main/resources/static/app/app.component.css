@@ -1,0 +1,70 @@
+textarea{
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: padding-box;
+    padding-top: 10px;
+    font-size: 10px;
+    margin: 50px auto;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.3);
+    border: 0;
+    text-align: center;
+    white-space: nowrap;
+    resize: none;
+    outline: none;
+    overflow-y: hidden;
+}
+
+
+.input-page{
+    width: 80%;
+    height: 100%;
+}
+
+.solution-page{
+    width: 100%;
+    height: 100%;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: monospace;
+    color: #000000;
+}
+
+.footer {
+    position: relative;
+    margin-top: -150px;
+    height: 150px;
+    clear:both;
+    padding-top:20px;
+}
+
+#main {
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+.my-buttons{
+    outline: none;
+    border-radius: 0;
+}
+
+.btn-row-1{
+    padding-bottom: 10px;
+}
+
+.btn-success{
+    background-color: #00ff00;
+    border-color: #000000;
+}
+
+.btn-danger{
+    background-color: #ff0000;
+    border-color: #000000;
+}
+
+.btn-primary{
+    background-color: #0000ff;
+    border-color: #000000;
+}

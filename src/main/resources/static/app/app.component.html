@@ -1,0 +1,60 @@
+<div *ngIf="!maze.mazeSolved || maze.mazeSolved == ''" class="container input-page">
+    <div id="instructions">
+        <h3>Instructions</h3>
+        <p>Enter a text-based maze in the box below. A maze consists of the following 4 characters: <strong># . A
+            B</strong>. No other characters may be present. The pound symbol (<strong>#</strong>) represents a wall. A
+            period (<strong>.</strong>) represents an open path. The capital letter <strong>A</strong> is the starting
+            point and the capital letter <strong>B</strong> is the end. There should be at least one valid path from A
+            to B. All lines of the maze must be the same length. Click one of the maze buttons below to see an example.
+        </p>
+    </div>
+    <div>
+        <textarea #input placeholder="Enter maze here...">{{maze.maze}}</textarea>
+        <div class="input-buttons">
+            <div class="btn-row-1">
+                <button (click)="input.value = populateMaze1(); textAreaAutoSize();"
+                        type="button" class="btn btn-primary my-buttons">
+                    Maze 1
+                </button>
+                <button (click)="input.value = populateMaze2(); textAreaAutoSize();"
+                        type="button" class="btn btn-primary my-buttons">
+                    Maze 2
+                </button>
+                <button (click)="input.value = populateMaze3(); textAreaAutoSize();"
+                        type="button" class="btn btn-primary my-buttons">
+                    Maze 3
+                </button>
+            </div>
+            <div>
+                <button (click)="solveMaze(input.value);" type="button" class="btn btn-success my-buttons">Animate
+                </button>
+                <button (click)="input.value = null; textAreaAutoSize();" type="button"
+                        class="btn btn-danger my-buttons">Clear
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="maze.mazeSolved" class="container solution-page">
+    <div *ngIf="maze.solveTime == 0">
+        <p>Maze solved too quickly to measure time</p>
+    </div>
+    <div *ngIf="maze.solveTime != 0">
+        <p>Maze solved in {{maze.solveTime}} milliseconds</p>
+    </div>
+    <p>Path length: {{maze.pathLength}}</p>
+    <div class="span12">
+        <canvas #canvas id="canvas" width="100" height="100">Your browser does not support canvas.
+        </canvas>
+        <div>
+            <button (click)="drawSolution(maze.bestPath)" id="solutionButton" type="button"
+                    class="btn btn-success my-buttons">Draw
+                Solution
+            </button>
+            <button (click)="maze.mazeSolved = ''; maze.maze='';" type="button" class="btn btn-primary my-buttons">
+                Back
+            </button>
+        </div>
+    </div>
+</div>
+
