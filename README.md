@@ -65,9 +65,9 @@ The shortest number of steps in this case is 14.
 
 Running Images
 ---
-![Screenshot](imgs/home.png)
+![Screenshot](imgs/home.PNG)
 
-![Screenshot](imgs/solution.png)
+![Screenshot](imgs/solution.PNG)
 
 Technologies used
 ---
