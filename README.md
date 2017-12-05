@@ -15,6 +15,9 @@ Note: does not work with Java 9 due to Maven/spring-boot issues. Use java 8. Als
 Get maven here: https://maven.apache.org/download.cgi. Also, if you are running on windows the JAVA_HOME environment
 variable must be set. Read about how to do this here. https://maven.apache.org/install.html. 
 
+** For best experience access localhost:8080 from Chrome. New line characters in mazes loaded from files do not display correctly
+in the text area on Safari or Firefox **
+
 If the drawing on the solution page does not display see the known issues at the end. 
 
 Description
