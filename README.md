@@ -82,7 +82,6 @@ Running Images
 
 Technologies used
 ---
-You don't have to use these, but these are what we use and recommend.
 * Java (Spring Boot)
 * Angular 
 * Bootstrap/CSS
