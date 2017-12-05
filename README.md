@@ -9,7 +9,8 @@ etc...). Run the command 'mvn spring-boot:run'. Once downloads/compilation are f
 navigate to localhost:8080. 
 
 Option 2: Import into IDE
-Import into an IDE of your choice (I used IntelliJ) and run as you normally would.
+
+Import into an IDE of your choice (I used IntelliJ) as a Maven project and run as you normally would.
 
 Note: does not work with Java 9 due to Maven/spring-boot issues. Use java 8. Also, Maven must be installed to run from command line. 
 Get maven here: https://maven.apache.org/download.cgi. Also, if you are running on windows the JAVA_HOME environment
