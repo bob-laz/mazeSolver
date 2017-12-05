@@ -1,13 +1,19 @@
 How to Run
 ---
+
 Clone or download the repo as a .zip file. Extract the zip file. 
 
+Option 1: Run from the commannd line
 Navigate into the extracted directory and in to the top level of the project (should contain pom.xml, mvnw, src, 
 etc...). Run the command 'mvn spring-boot:run'. Once downloads/compilation are finished and server is running 
 navigate to localhost:8080. 
 
-Note: does not work with Java 9 due to Maven/spring-boot issues. Use java 8. Also, Maven must be installed. 
-Get maven here: https://maven.apache.org/index.html
+Option 2: Import into IDE
+Import into an IDE of your choice (I used IntelliJ) and run as you normally would.
+
+Note: does not work with Java 9 due to Maven/spring-boot issues. Use java 8. Also, Maven must be installed to run from command line. 
+Get maven here: https://maven.apache.org/download.cgi. Also, if you are running on windows the JAVA_HOME environment
+variable must be set. Read about how to do this here. https://maven.apache.org/install.html. 
 
 Description
 ---
