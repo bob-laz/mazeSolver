@@ -15,6 +15,8 @@ Note: does not work with Java 9 due to Maven/spring-boot issues. Use java 8. Als
 Get maven here: https://maven.apache.org/download.cgi. Also, if you are running on windows the JAVA_HOME environment
 variable must be set. Read about how to do this here. https://maven.apache.org/install.html. 
 
+If the drawing on the solution page does not display see the known issues at the end. 
+
 Description
 ---
 This project is a retro-themed full-stack solution to solving text-based mazes input by a user on the front end. 
@@ -90,8 +92,8 @@ Known issues
 white. Click draw solution again to see complete solution.
 * A timeout function used to navigate to the solution display page so that the rest call can be made and canvas
 element can be loaded. If rest call and navigation takes longer than timeout, you will get a "TypeError: Cannot set 
-property 'width' of null" due to the canvas element not being initialized yet. Timeout is currently set to 1500 ms 
-(1.5 seconds). If rest call and navigation takes longer this can be remedied by increasing the timeout. This is also 
+property 'width' of null" due to the canvas element not being initialized yet. Timeout is currently set to 2000 ms 
+(2 seconds). If rest call and navigation takes longer this can be remedied by increasing the timeout. This is also 
 the reason for the delay in the loading of the drawing on the solution page. This could be fixed by implementing 
 angular's routing. 
 * Display is not optimized for low resolution screens. You will likely see a lot of horizontal scrolling with screen 
