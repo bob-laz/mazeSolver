@@ -4,6 +4,7 @@ How to Run
 Clone or download the repo as a .zip file. Extract the zip file. 
 
 Option 1: Run from the commannd line
+
 Navigate into the extracted directory and in to the top level of the project (should contain pom.xml, mvnw, src, 
 etc...). Run the command 'mvn spring-boot:run'. Once downloads/compilation are finished and server is running 
 navigate to localhost:8080. 
